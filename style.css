@@ -1,0 +1,165 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+header {
+    background-color: #123456;
+    color: white;
+    padding: 20px 6%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin-left: 20px;
+}
+
+nav a:hover {
+    color: #ffd700;
+}
+
+.hero {
+    min-height: 450px;
+    background: linear-gradient(90deg, #123456, #2676a8);
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 40px 20px;
+}
+
+.hero h1 {
+    font-size: 38px;
+    margin-bottom: 15px;
+}
+
+.hero p {
+    font-size: 20px;
+    margin-bottom: 30px;
+}
+
+.btn {
+    background-color: #ffd700;
+    color: #123456;
+    padding: 12px 25px;
+    text-decoration: none;
+    border-radius: 5px;
+    display: inline-block;
+}
+
+.section {
+    padding: 60px 8%;
+    text-align: center;
+}
+
+.section h2 {
+    color: #123456;
+    margin-bottom: 25px;
+}
+
+.section > p {
+    line-height: 1.8;
+    max-width: 800px;
+    margin: auto;
+}
+
+.department-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.department-card {
+    background-color: #f1f5f9;
+    padding: 25px;
+    width: 240px;
+    border-radius: 10px;
+    box-shadow: 0 3px 10px #00000020;
+}
+
+.department-card h3 {
+    color: #123456;
+    margin-bottom: 12px;
+}
+
+.department-card p {
+    line-height: 1.6;
+}
+
+form {
+    max-width: 450px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+input, textarea {
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+textarea {
+    height: 120px;
+    resize: vertical;
+}
+
+button {
+    padding: 12px;
+    background-color: #123456;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #2676a8;
+}
+
+#result {
+    margin-top: 15px;
+}
+
+footer {
+    background-color: #123456;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+@media (max-width: 700px) {
+    header {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    nav {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 12px;
+    }
+
+    nav a {
+        margin: 0;
+    }
+
+    .hero h1 {
+        font-size: 28px;
+    }
+}
